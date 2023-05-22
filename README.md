@@ -1,6 +1,6 @@
 # MNIST Handwritten Digit Recognition with k-Nearest Neighbors (KNN)
 
-This repository contains an implementation of a simple handwritten digit recognition system using the MNIST dataset and the k-Nearest Neighbors (KNN) algorithm. The purpose of this project is to showcase the effectiveness of KNN in classifying handwritten digits accurately.
+This repository contains an implementation of a simple handwritten digit recognition system using the MNIST dataset and the k-Nearest Neighbors (KNN) algorithm. The purpose of this project is to showcase the effectiveness of KNN in classifying handwritten digits accurately. The implementation is done solely using the NumPy library.
 
 ## MNIST Dataset
 
@@ -12,16 +12,17 @@ The KNN algorithm is a simple yet powerful classification algorithm that is wide
 
 ## Implementation Details
 
-In this project, we have implemented the KNN algorithm to classify the MNIST handwritten digit images. Here's a brief overview of the steps involved:
+In this project, we have implemented the KNN algorithm to classify the MNIST handwritten digit images using only the NumPy library. Here's a brief overview of the steps involved:
 
-Data Loading: The MNIST dataset is loaded using a popular machine learning library, such as TensorFlow or PyTorch. The dataset is divided into training and test sets.
-
-Data Preprocessing: Before feeding the data to the KNN algorithm, some preprocessing steps may be required. This can include reshaping the images into a suitable format, normalizing the pixel values, or reducing the dimensionality of the data.
-
-Training: The training phase of the KNN algorithm is very fast because it simply stores all the training instances in memory.
-
-Prediction: For each instance in the test set, the KNN algorithm calculates the distance to all training instances and selects the k nearest neighbors. The predicted label is determined by the majority vote of the labels of these neighbors.
+### Data Loading: 
+The MNIST dataset is loaded using the NumPy library. The dataset is divided into training and test sets.
+### Data Preprocessing: 
+Before feeding the data to the KNN algorithm, some preprocessing steps may be required. This can include reshaping the images into a suitable format, normalizing the pixel values, or reducing the dimensionality of the data. These preprocessing steps are implemented using NumPy operations.
+### Training: 
+The training phase of the KNN algorithm is very fast because it simply stores all the training instances in memory using NumPy arrays.
+### Prediction: 
+For each instance in the test set, the KNN algorithm calculates the distance to all training instances and selects the k nearest neighbors. The predicted label is determined by the majority vote of the labels of these neighbors. NumPy is used for efficient distance calculations and array manipulations.
 
 ## Conclusion
 
-This project demonstrates how the KNN algorithm can be used for handwritten digit recognition using the MNIST dataset. The implementation provides a starting point for further exploration and experimentation with other classification algorithms or dataset variations. Feel free to modify and extend the code to suit your specific needs or to apply the KNN algorithm to other image classification problems. Enjoy exploring the fascinating world of machine learning!
+This project demonstrates how the KNN algorithm can be used for handwritten digit recognition using the MNIST dataset. The implementation showcases the power of the NumPy library in handling the data preprocessing, training, prediction, and evaluation steps of the algorithm. Feel free to modify and extend the code to suit your specific needs or to apply the KNN algorithm to other image classification problems. Enjoy exploring the fascinating world of machine learning!
